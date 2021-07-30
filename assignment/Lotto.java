@@ -11,34 +11,34 @@ public class Lotto {
 	public static void main(String[] args) {
 		count = 0;
 		
-		// ÀÌ¸§ ÀÔ·Â¹Ş±â
+		// ì´ë¦„ ì…ë ¥ë°›ê¸°
 		inputName();
 		
-		// ±â°è°¡ »ÌÀº ·Î¶Ç¹øÈ£
+		// ê¸°ê³„ê°€ ë½‘ì€ ë¡œë˜ë²ˆí˜¸
 		makeLottoNum();
 		
-		// »ç¶÷ÀÌ »ÌÀº ·Î¶Ç¹øÈ£
+		// ì‚¬ëŒì´ ë½‘ì€ ë¡œë˜ë²ˆí˜¸
 		makeUserNum();
 		
-		// ±â°è¿Í »ç¶÷ÀÌ »ÌÀº ¹øÈ£ ¸ÂÃçº¸±â
+		// ê¸°ê³„ì™€ ì‚¬ëŒì´ ë½‘ì€ ë²ˆí˜¸ ë§ì¶°ë³´ê¸°
 		makeCount();
 		
-		// 6°³ - 1µî, 5°³ - 2µî, 4°³ - 3µî, ³ª¸ÓÁö ²Î
+		// 6ê°œ - 1ë“±, 5ê°œ - 2ë“±, 4ê°œ - 3ë“±, ë‚˜ë¨¸ì§€ ê½
 		informrRanking();
 
 	}
 
 	public static void informrRanking() {
-		System.out.print("[·Î¶Ç°á°ú] " + Name + " ´Ô, ¿À´ÃÀº ");
+		System.out.print("[ë¡œë˜ê²°ê³¼] " + Name + " ë‹˜, ì˜¤ëŠ˜ì€ ");
 		if(count == 6) {
-			System.out.print("1µîÀÔ´Ï´Ù!, ");
+			System.out.print("1ë“±ì…ë‹ˆë‹¤!, ");
 		}else if(count == 5) {
-			System.out.print("2µîÀÔ´Ï´Ù!, ");
+			System.out.print("2ë“±ì…ë‹ˆë‹¤!, ");
 		}else if(count == 4) {
-			System.out.print("3µîÀÔ´Ï´Ù!, ");
-		}else System.out.print("²ÎÀÔ´Ï´Ù. ");
+			System.out.print("3ë“±ì…ë‹ˆë‹¤!, ");
+		}else System.out.print("ê½ì…ë‹ˆë‹¤. ");
 		
-		System.out.print("»ÌÀ¸½Å ¹øÈ£ [");
+		System.out.print("ë½‘ìœ¼ì‹  ë²ˆí˜¸ [");
 		for(int i = 0; i < 6; i++) {
 			System.out.print(" " + lottoUser[i]);
 		}
@@ -46,7 +46,7 @@ public class Lotto {
 	}
 
 	public static void inputName() {
-		System.out.println("ÀÌ¸§À» ÀÔ·ÂÇØÁÖ¼¼¿ä. ");
+		System.out.println("ì´ë¦„ì„ ì…ë ¥í•´ì£¼ì„¸ìš”. ");
 		Name = sc.next();
 	}
 
